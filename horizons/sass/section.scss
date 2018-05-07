@@ -63,11 +63,12 @@ section {
     }
   }
   .summary__list {
+    font-family: $heading;
     img {
       align-self: flex-start;
       width: 50px;
       height: 50px;
-      margin-right: 1rem;
+      margin-right: 1.6rem;
     }
     &:first-of-type {
       padding-right: 1rem;

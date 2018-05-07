@@ -15,14 +15,17 @@ h4,
 h5,
 h6 {
   margin: 0;
-  text-shadow: 1px 1px rgba(255,255,255,0.3), -1px -1px rgba(0,0,0,0.4);
+  font-weight: 400;
+  text-shadow: 1px 2px 1px $gold,
+               0 0 0 $white,
+               -1px 1px 0 $gold,
+               0 1px 0 $white;
 }
 h1,
 h2,
 h3,{
   font-family: $heading, monospace;
   // text-transform: uppercase;
-  font-weight: 400;
 }
 h1 {
   font-size: 4rem;
