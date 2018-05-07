@@ -20,7 +20,7 @@ img {
 
 p {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1rem;
   line-height: 1.6em;
 }
 
@@ -28,9 +28,10 @@ nav {
   display: flex;
   justify-content: center;
   text-transform: lowercase;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: $heading;
   padding: 1.5rem;
   a:not(:last-child) {
     margin-right: 2rem;
@@ -83,7 +84,7 @@ nav {
   padding: 0.5rem;
   width: 25px;
   height: 25px;
-  background-color: $chestnut;
+  background-color: $gold;
   text-align: right;
   font-size: 1rem;
   position: fixed;

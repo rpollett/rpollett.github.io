@@ -11,12 +11,12 @@ function getGeneratedLineData(numbers) {
     labels: getWeeksArray(),
     datasets: [
       {
-        borderColor: "rgba(174,155,255,0.67)",
-        pointColor: "#AE9BFF",
+        borderColor: "#b69792",
+        pointColor: "#966760",
         data: numbers,
         pointRadius: 4,
         borderWidth: 1,
-        pointBackgroundColor: "#C0B2FC"
+        pointBackgroundColor: "#b69792"
       }
     ]
   };
@@ -29,7 +29,7 @@ function getGeneratedBarData(numbers) {
     datasets: [
       {
         labels: labels,
-        backgroundColor: "rgba(174,155,255,0.67)",
+        backgroundColor: "rgba(255, 241, 221, 0.76)",
         data: numbers
       }
     ]
@@ -74,16 +74,16 @@ for (var i = 0; i < 6; i++) {
         yAxes: [
           {
             ticks: {
-              fontColor: "#444363",
-              fontSize: 12
+              fontColor: "#fff1dd",
+              fontSize: 14
             }
           }
         ],
         xAxes: [
           {
             ticks: {
-              fontColor: "#444363",
-              fontSize: 12
+              fontColor: "#fff1dd",
+              fontSize: 14
             }
           }
         ]

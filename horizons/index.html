@@ -4,7 +4,7 @@ css: oasis
 nav:
   - name: home
     link: '/'
-  - name: snippets
+  - name: info
     link: '#section-snippets'
   - name: stats
     link: '#section-stats'
@@ -13,37 +13,36 @@ nav:
 section-hero:
   title: Horizons
   description: Alert tracking and monitoring of network system status at all times. Prevent incidents and enjoy convienient, secure access.
-  image: "images/hero-phone.png"
+  image: "images/iPhone-X-Mockup.gif"
 section-summary:
   title: Reliable Monitoring System
   list:
     - img: "images/summary-github.png"
-      text: works on phone and all devices
+      text: constant monitoring
     - img: "images/summary-cpu.png"
-      text: free status page for monitoring
+      text: works across all devices
     - img: "images/summary-dollar.png"
-      text: easy integrations and setup
+      text: quick integration and setup
   text: >-
-    For some systems, latency and throughput are coupled entities. In TCP/IP, latency can also directly affect throughput. In TCP connections, the large bandwidth-delay product of high latency connections, combined with relatively small TCP window sizes on many devices, effectively causes the throughput of a high latency connection to drop sharply with latency.
+    Stateless firewalls watch network traffic and restrict or block packets based on source and destination address.
     <br><br>
-    This can be remedied with various techniques, such as increasing the TCP congestion window size, or more drastic solutions, such as packet coalescing, TCP acceleration, and forward error correction, all of which are commonly used for high latency satellite links.
+    Intrusion detection creates alerts that can pinpoint bad actors on external and internal networks. Intrusion prevention can automatically block malicious or unwanted traffic in real time.
 section-snippets:
-  title: Easy tracking of all your stats
+  title: Advanced tools allow you to zoom into your network infrastructure
   cards:
-    - text: Health check on the latest selected time range
+    - text: Health checkup
       stats: OK
-    - text: The average ping up time of selected time range
-      stats: 95%
-    - text: Average latency in the selected time range
-      stats: 19ms
-    - text: Shows the average packet lost in selected time range
+    - text: Average ping time
+      stats: 3ms
+    - text: Average latency
+      stats: 11ms
+    - text: Average packet loss
       stats: 0.1
-    - text: Error rate of bit transmission in selected time range
+    - text: False flags
       stats: 0.02%
   description: >-
-    Throughput is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations. Throughput for the purpose of this article will be understood to be measured from the arrival of the first bit of data at the receiver, to decouple the concept of throughput from the concept of latency.
+    Ensure optimal network health and reliability through bandwidth testing and performance monitoring tools with simple, minimal user interfaces.
     <br><br>
-    Choice of an appropriate time window will often dominate calculations of throughput.
 <!-- section-features:
   title: Features of Oasis
   description: TCP acceleration converts the TCP packets into a stream that is similar to UDP. Because of this, the TCP acceleration software must provide its own mechanisms to ensure the reliability of the link.
@@ -63,8 +62,8 @@ section-snippets:
     - img: "images/features-rec.svg"
       text: This delay can be very noticeable and affects satellite phone service regardless of available throughput capacity. -->
 section-stats:
-  title: Stats on Oasis
-  description: These long path length considerations are exacerbated when communicating with space probes and other long-range targets beyond Earth's atmosphere.
+  title: Network Landscape
+  description: Threat Awareness
   stats-list:
     - id: stats-0
       name: A/B Split
@@ -72,18 +71,6 @@ section-stats:
     - id: stats-1
       name: Crash Rate
       number: 89%
-    - id: stats-2
-      name: Error reporting API - Uptime
-      number: 100
-    - id: stats-3
-      name: General API
-      number: 81rps
-    - id: stats-4
-      name: Data Access API
-      number: 93%
-    - id: stats-5
-      name: Average Latency
-      number: 1.98ms
 <!-- section-integrations:
   title: Trusted by
   logos:
@@ -110,8 +97,8 @@ section-stats:
       image: images/customer-2.png -->
 section-contact:
   title: Ready to get started?
-  description: Sign up here and a representative will contact you shortly.
-  btn-text: Sign Up
+  description: Drop us your email and we'll connect soon.
+  btn-text: transmit
 ---
 <nav class="nav--desktop">
   {% for item in page.nav %}
@@ -131,7 +118,7 @@ section-contact:
 <section class="section--hero">
   <div class="flex--horizontal">
     <div class="flex_child--horizontal aligner">
-      <h1>{{ page.section-hero.title }}</h1>
+      <h2>{{ page.section-hero.title }}</h2>
       <p class="">{{ page.section-hero.description }}</p>
       <a href="" class="cta">
         <strong>Available Soon</strong><br>
@@ -155,7 +142,7 @@ section-contact:
     </div>
     <div class="flex_child--vertical flex--horizontal aligner fadeIn">
       <p>{{ page.section-summary.text }}</p>
-      <h2 class="aligner_item--bottom">{{ page.section-summary.title }}</h2>
+      <h3 class="aligner_item--bottom">{{ page.section-summary.title }}</h3>
     </div>
   </div>
 </section>
@@ -252,7 +239,7 @@ section-contact:
     <div class="form-group">
       <form method="POST" action="https://formspree.io/horizons.infosec@icloud.com">
   <input class="input" type="email" name="email" placeholder="Email">
-  <button class="input-button" type="submit">Send</button>
+  <button class="input-button" type="submit">transmit</button>
 </form>
     </div>
   </div>

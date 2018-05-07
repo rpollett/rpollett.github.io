@@ -8,7 +8,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0; }
+  margin: 0;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3), -1px -1px rgba(0, 0, 0, 0.4); }
 
 h1,
 h2,
@@ -17,19 +18,19 @@ h3 {
   font-weight: 400; }
 
 h1 {
-  font-size: 4em; }
+  font-size: 4rem; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3rem; }
 
 h3 {
-  font-size: 2.2em; }
+  font-size: 2rem; }
 
 h4 {
-  font-size: 1.4em; }
+  font-size: 1.4rem; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1rem; }
 
 html,
 body {
@@ -51,16 +52,17 @@ img {
 
 p {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1rem;
   line-height: 1.6em; }
 
 nav {
   display: flex;
   justify-content: center;
   text-transform: lowercase;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: "Space Mono";
   padding: 1.5rem; }
   nav a:not(:last-child) {
     margin-right: 2rem; }
@@ -105,7 +107,7 @@ nav {
   padding: 0.5rem;
   width: 25px;
   height: 25px;
-  background-color: #966760;
+  background-color: #DAA24D;
   text-align: right;
   font-size: 1rem;
   position: fixed;
@@ -223,7 +225,7 @@ section {
       border-top: 1px solid #DAA24D; }
       .section--summary .flex_child--vertical:last-of-type p {
         flex: 2; }
-      .section--summary .flex_child--vertical:last-of-type h2 {
+      .section--summary .flex_child--vertical:last-of-type h3 {
         flex: 1;
         text-align: right;
         align-content: flex-end;
@@ -446,18 +448,20 @@ section {
   border-bottom-right-radius: 3px;
   background-color: #DAA24D;
   color: #3A3C3B;
-  width: 15%; }
+  text-transform: uppercase;
+  font-family: "Space Mono"; }
 
 .cta {
   background: #978A8B;
   border-radius: 3px;
   color: #fff1dd;
-  font-size: 0.9rem;
-  padding: 0.45rem 0.6rem;
+  font-size: 1.2rem;
+  padding: 0.6rem;
   outline: 0;
   width: 80%;
   max-width: 230px;
   text-align: left;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3), -1px -1px rgba(0, 0, 0, 0.7) !important;
   cursor: pointer;
   transition: 0.2s;
   text-decoration: none;
@@ -476,11 +480,11 @@ section {
     background-repeat: no-repeat; }
 
 .fadeIn {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
   animation-fill-mode: forwards; }
 
 .fadeInUp {
-  animation: fadeInUp 1s ease-in-out;
+  animation: fadeInUp 2s ease-in-out;
   animation-fill-mode: forwards; }
 
 .fadeInRight {
