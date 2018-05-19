@@ -1,0 +1,29 @@
+.cta {
+  background: $taupe;
+  border-radius: 3px;
+  color: $white;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  outline: 0;
+  width: 80%;
+  max-width: 230px;
+  text-align: left;
+  text-shadow: 1px 1px rgba(255,255,255,0.3), -1px -1px rgba(0,0,0,0.7) !important;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url(/images/apple.png);
+    right: 0.5rem;
+    top: 20%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
